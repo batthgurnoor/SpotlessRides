@@ -1,0 +1,24 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #191718;
+  color: white;
+}
+
+.navbar {
+  border-bottom: 3px solid #555;
+  position: fixed;
+  width: 100%;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+#welcome {
+  background: url("images/1.png");
+  height: 100vh;
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
