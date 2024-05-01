@@ -6,17 +6,11 @@
     <title>Car Detailing Business</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Car Detailing</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -37,13 +31,10 @@
               <a class="nav-link" href="#about">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#menu">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#reviews">Reviews</a>
+              <a class="nav-link" href="#testimonial">Reviews</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -54,60 +45,516 @@
     </nav>
 
     <!-- Welcome Section -->
-    <section id="welcome" class="text-center text-light p-5">
-      <p>Experience the best care for your car</p>
-    </section>
-
+    <section id="welcome" class="text-center text-light p-5"></section>
     <!-- About Us -->
     <section id="about" class="text-light p-5 bg-dark">
       <div class="container">
-        <h2>About Us</h2>
-        <p>We are experts in car detailing, bringing out the best in your vehicle.</p>
+        <div class="row">
+          <div class="title"><h1>ABOUT SPOTLESS RIDES</h1></div>
+          <!-- Left Column for Process and History -->
+          <div class="row-container">
+            <div class="col-lg-6 inner-row left text">
+              <h2 class="subtitle">Our Process</h2>
+              <p class="text">
+                We use only the highest quality products and equipment to ensure that your car receives the
+                best care possible. Our process includes a thorough wash, wax, and polish, as well as interior
+                detailing to make your car shine both inside and out.
+              </p>
+            </div>
+            <div class="col-lg-6 inner-row right image">
+              <img src="images/car1.jpg" alt="Car detailing process" class="img-fluid" />
+            </div>
+          </div>
+          <div class="row-container">
+            <div class="col-lg-6 inner-row left image">
+              <img src="images/car2.jpg" alt="Professional car detailing" class="img-fluid" />
+            </div>
+            <div class="col-lg-6 inner-row right text">
+              <h2 class="subtitle">Our History</h2>
+              <p class="text">
+                At Spotless Rides, we have been providing top-notch car detailing services for over 10 years.
+                Our team of experts is dedicated to ensuring that your car looks and feels as good as new.
+              </p>
+            </div>
+
+            <!-- Right Column for Team -->
+          </div>
+          <div class="row-container">
+            <div class="col-lg-6 inner-row left text">
+              <h2 class="subtitle">Our Team</h2>
+              <p class="info">
+                Our team of experienced professionals is passionate about cars and dedicated to providing
+                excellent customer service. We take pride in our work and strive to exceed your expectations
+                with every detail.
+              </p>
+            </div>
+
+            <div class="col-lg-6 inner-row right image">
+              <img src="images/car3.jpg" alt="Detailing team at work" class="img-fluid" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
-    <!-- Gallery Carousel -->
-    <section id="gallery" class="p-5">
-      <div class="carousel">
-        <div><img src="image1.jpg" alt="Detailing 1" /></div>
-        <div><img src="image2.jpg" alt="Detailing 2" /></div>
-        <div><img src="image3.jpg" alt="Detailing 3" /></div>
-      </div>
-    </section>
-
     <!-- Menu Section -->
-    <section id="menu" class="text-light p-5 bg-dark">
+    <section id="menu" class="text-light p-5">
       <div class="container">
-        <h2>Our Services</h2>
-        <p>Explore our wide range of detailing services designed to keep your car looking new.</p>
+        <div class="text-center">
+          <header class="title">
+            <h1>Our Services</h1>
+            <h4>Explore our wide range of detailing services designed to keep your car looking new.</h4>
+          </header>
+        </div>
+        <div class="filters">
+          <button data-group="All" class="filterBtn active"><h5>All</h5></button>
+
+          <button class="filterBtn" data-group="Car/Sedan"><h5>Car/Sedan</h5></button>
+
+          <button class="filterBtn" data-group="SUV (5 Seater)"><h5>SUV (5 Seater)</h5></button
+          ><button class="filterBtn" data-group="SUV (7 Seater) / Mini-Van">
+            <h5>SUV (7 Seater) / Mini-Van</h5></button
+          ><button class="filterBtn" data-group="Pick-Up Truck"><h5>Pick-Up Truck</h5></button>
+        </div>
+        <div class="container-fluid">
+          <div class="row work-items">
+            <div class="col-sm-6 col-lg-4 item" data-groups='["All","Photography"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/1.png"
+                data-title="Express Service"
+                data-time="1 hr"
+                data-description="$96"
+              >
+                <div class="image"><img src="images/sale.png" alt="work" /></div>
+                <div class="info">
+                  <div class="text">
+                    <span class="service_title">Express Service</span>
+                    <p class="service_info">1 hr | C$100</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["All","Car/Sedan"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/2.png"
+                data-title="Full Exterior & Interior Detailing"
+                data-time="3 hrs 30 mins"
+                data-description="$220"
+              >
+                <div class="image"><img src="images/sedan.png" alt="work" /></div>
+                <div class="info">
+                  <div class="text">
+                    <div class="text">
+                      <span class="service_title">Full Exterior & Interior Detailing</span>
+                      <p class="service_info">3 hrs 30 mins | C$220</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["All","Car/Sedan"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/3.png"
+                data-title="Light Exterior & Interior"
+                data-time="3 hrs"
+                data-description="$150"
+              >
+                <div class="image"><img src="images/sedan.png" alt="work" /></div>
+                <div class="info">
+                  <div class="text">
+                    <span class="service_title">Light Exterior & Interior</span>
+                    <p class="service_info">3 hrs | C$150</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["All","Car/Sedan"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/4.png"
+                data-title="Interior"
+                data-time="2 hrs"
+                data-description="$120"
+              >
+                <div class="image"><img src="images/sedan.png" alt="work" /></div>
+                <div class="info">
+                  <div class="text">
+                    <span class="service_title">Interior</span>
+                    <p class="service_info">2 hrs | C$120</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["All","Car/Sedan"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/5.png"
+                data-title="Exterior"
+                data-time="1 hr"
+                data-description="$120"
+              >
+                <div class="image"><img src="images/sedan.png" alt="work" /></div>
+                <div class="info">
+                  <div class="text">
+                    <span class="service_title">Exterior</span>
+                    <p class="service_info">1 hr | C$120</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["All","SUV (5 Seater)"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/2.png"
+                data-title="Full Exterior & Interior Detailing"
+                data-time="4 hrs"
+                data-description="$235"
+              >
+                <div class="image"><img src="images/suv5.png" alt="work" /></div>
+                <div class="info">
+                  <div class="text">
+                    <span class="service_title">Full Exterior & Interior Detailing</span>
+                    <p class="service_info">4 hrs | C$235</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["All","SUV (5 Seater)"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/3.png"
+                data-title="Light Exterior & Interior"
+                data-time="3 hrs"
+                data-description="$170"
+              >
+                <div class="image"><img src="images/suv5.png" alt="work" /></div>
+                <div class="info">
+                  <div class="text">
+                    <span class="service_title">Light Exterior & Interior</span>
+                    <p class="service_info">3 hrs | C$170</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["All","SUV (5 Seater)"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/4.png"
+                data-title="Interior"
+                data-time="2 hrs"
+                data-description="$140"
+              >
+                <div class="image"><img src="images/suv5.png" alt="work" /></div>
+                <div class="info">
+                  <div class="text">
+                    <span class="service_title">Interior</span>
+                    <p class="service_info">2 hrs | $140</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["All","SUV (5 Seater)"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/5.png"
+                data-title="Exterior"
+                data-time="2 hrs"
+                data-description="$150"
+              >
+                <div class="image"><img src="images/suv5.png" alt="work" /></div>
+                <div class="info">
+                  <div class="text">
+                    <span class="service_title">Exterior</span>
+                    <p class="service_info">2 hrs | C$150</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["All","SUV (7 Seater) / Mini-Van"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/2.png"
+                data-title="Full Exterior & Interior Detailing"
+                data-time="4 hrs"
+                data-description="$270"
+              >
+                <div class="image"><img src="images/suv7.png" alt="work" /></div>
+                <div class="info">
+                  <div class="text">
+                    <span class="service_title">Full Exterior & Interior Detailing</span>
+                    <p class="service_info">4 hrs | C$270</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["All","SUV (7 Seater) / Mini-Van"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/3.png"
+                data-title="Light Exterior & Interior"
+                data-time="3 hrs"
+                data-description="$180"
+              >
+                <div class="image"><img src="images/suv7.png" alt="work" /></div>
+                <div class="info">
+                  <div class="text">
+                    <span class="service_title">Light Exterior & Interior</span>
+                    <p class="service_info">3 hrs | C$180</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["All","SUV (7 Seater) / Mini-Van"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/4.png"
+                data-title="Interior"
+                data-time="2 hrs"
+                data-description="$140"
+              >
+                <div class="image"><img src="images/suv7.png" alt="work" /></div>
+                <div class="info">
+                  <div class="text">
+                    <span class="service_title">Interior</span>
+                    <p class="service_info">2 hrs | C$140</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["All","SUV (7 Seater) / Mini-Van"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/5.png"
+                data-title="Exterior"
+                data-time="1 hr"
+                data-description="$150"
+              >
+                <div class="image"><img src="images/suv7.png" alt="work" /></div>
+                <div class="info">
+                  <div class="text">
+                    <span class="service_title">Exterior</span>
+                    <p class="service_info">1 hr | C$150</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["All","Pick-Up Truck"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/2.png"
+                data-title="Full Exterior & Interior Detailing"
+                data-time="4 hrs"
+                data-description="$270"
+              >
+                <div class="image"><img src="images/truck.png" alt="work" /></div>
+                <div class="info">
+                  <div class="text">
+                    <span class="service_title">Full Exterior & Interior Detailing</span>
+                    <p class="service_info">4 hrs | C$270</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["All","Pick-Up Truck"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/3.png"
+                data-title="Light Exterior & Interior"
+                data-time="3 hrs"
+                data-description="$180"
+              >
+                <div class="image"><img src="images/truck.png" alt="work" /></div>
+                <div class="info">
+                  <div class="text">
+                    <span class="service_title">Light Exterior & Interior</span>
+                    <p class="service_info">3 hrs | C$180</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["All","Pick-Up Truck"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/4.png"
+                data-title="Interior"
+                data-time="2 hrs"
+                data-description="$140"
+              >
+                <div class="image"><img src="images/truck.png" alt="work" /></div>
+                <div class="info">
+                  <div class="text">
+                    <span class="service_title">Interior</span>
+                    <p class="service_info">2 hrs | C$140</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 item" data-groups='["All","Pick-Up Truck"]'>
+              <div
+                class="wrap"
+                data-image="assets/images/works/5.png"
+                data-title="Exterior"
+                data-time="1 hr"
+                data-description="$150"
+              >
+                <div class="image"><img src="images/truck.png" alt="work" /></div>
+                <div class="info">
+                  <div class="text">
+                    <span class="service_title">Exterior</span>
+                    <p class="service_info">1 hr | C$150</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
     <!-- Customer Reviews -->
-    <section id="reviews" class="text-center p-5">
-      <h2>Customer Reviews</h2>
-      <p>"Best detailing service I've ever had!" - John Doe</p>
+    <section id="testimonial" class="text-center p-5 text-light p-5 bg-dark">
+      <div class="text-center">
+        <header class="title">
+          <h1>Reviews</h1>
+        </header>
+      </div>
+      <section class="main-section">
+        <div class="images">
+          <img src="images/1.jpg" alt="1" />
+          <img src="images/2.jpg" alt="2" />
+          <img src="images/3.jpg" alt="3" class="active" />
+          <img src="images/4.jpg" alt="4" />
+          <img src="images/5.jpg" alt="5" />
+        </div>
+        <div class="comments">
+          <div class="item">
+            <div class="box">
+              <p>
+                <span>&lsquo;&lsquo;</span>During his tenure at our company, Gurnoor consistently exceeded our
+                expectations. Not only did he deliver high-quality work on tight deadlines, but his innovative
+                approach to problem-solving also led to improvements in our workflows.<span
+                  >&rsquo;&rsquo;</span
+                >
+              </p>
+            </div>
+            <div class="writer">
+              <span class="name">Ben Toews</span>
+              <span class="field"> -Art's Custom Woodcrafting</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <p>
+                <span>&lsquo;&lsquo;</span> He is an excellent addition to the team, Always brings a positive
+                work enviroment <span>&rsquo;&rsquo;</span>
+              </p>
+            </div>
+            <div class="writer">
+              <span class="name">Wayne Kuiken</span>
+              <span class="field"> -Art's Custom Woodcrafting</span>
+            </div>
+          </div>
+          <div class="item active">
+            <div class="box">
+              <p>
+                <span>&lsquo;&lsquo;</span> We are sad to see him go , but Gurnoor is always welcome back to
+                the team whenever he wants. He is the best Customer service Representatative our company has
+                seen. <span>&rsquo;&rsquo;</span>
+              </p>
+            </div>
+            <div class="writer">
+              <span class="name">Tarandeep Kaur</span>
+              <span class="field"> -Gap Inc.</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <p>
+                <span>&lsquo;&lsquo;</span> Gurnoor doesn't just create designs; he weaves stories through
+                colors and shapes, making every project a masterpiece. It's rare to come across such a blend
+                of innovation and precision, and his work is a testament to their exceptional talent in the
+                graphic design realm <span>&rsquo;&rsquo;</span>
+              </p>
+            </div>
+            <div class="writer">
+              <span class="name">Pamela Anderson</span>
+              <span class="field"> -GD Instructor</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <p>
+                <span>&lsquo;&lsquo;</span> Gurnoor's programming skills are excellent. What sets him apart
+                isn't just their technical skill, but his approach to problem-solving — meticulous,
+                innovative, and always user-centric. Each project showcases not just code, but a thoughtful
+                solution tailored to real-world challenges."
+                <span>&rsquo;&rsquo;</span>
+              </p>
+            </div>
+            <div class="writer">
+              <span class="name">Rick Adams</span>
+              <span class="field"> -CIS Instructor</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
-
     <!-- Contact Us Form -->
-    <section id="contact" class="text-light p-5 bg-dark">
+    <section id="contact" class="text-light p-5">
+      <div class="meteor-shower"></div>
+      <div class="text-center">
+        <header class="title">
+          <h1>Contact Us</h1>
+        </header>
+      </div>
       <div class="container">
-        <h2>Contact Us</h2>
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" />
+        <div class="row">
+          <div class="col-lg-6 form">
+            <form id="message-form">
+              <div class="form-item">
+                <label>Name</label>
+                <input id="textInput" type="text" name="name" required />
+              </div>
+              <div class="form-item">
+                <label>Email</label>
+                <input id="emailInput" type="email" name="email" required />
+              </div>
+              <div class="form-item">
+                <label>Subject</label>
+                <input id="subjectInput" type="text" name="subject" required />
+              </div>
+              <div class="form-item">
+                <label>Message</label>
+                <textarea id="messageInput" name="message" required></textarea>
+              </div>
+              <div class="text-end">
+                <button class="btn-custom-dark" type="submit">Send Message</button>
+              </div>
+            </form>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" />
+          <div class="col-lg-6 info">
+            <div class="item">
+              <i class="las la-phone"></i>
+              <div class="text">
+                <span class="title">Phone number:</span> <a href="tel:+16478037507">+16478037507</a>
+              </div>
+            </div>
+            <div class="item">
+              <i class="lar la-envelope"></i>
+              <div class="text">
+                <span class="title">Email:</span> <a href="mailto:gskaran3@gmail.com">gskaran3@gmail.com</a>
+              </div>
+            </div>
+            <div class="item">
+              <i class="las la-map-pin"></i>
+              <div class="text">
+                <span class="title">Location</span>
+                <p>Abbotsford, BC</p>
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="3"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send</button>
-        </form>
+        </div>
       </div>
     </section>
 
@@ -116,8 +563,14 @@
       <p>&copy; 2024 Car Detailing Business. All Rights Reserved.</p>
     </footer>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/6.1.0/shuffle.min.js"
+      integrity="sha512-r8mIpk3ypCMwNxH6srRZGbjHQlOFt3Mq2vrZ/iymx6g9JUqTeVavofeX6gbrxAC74X5HmBy5gxyhCm6OiXrM0Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
