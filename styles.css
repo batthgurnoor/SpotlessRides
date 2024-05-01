@@ -12,8 +12,7 @@ body {
   z-index: 10;
 
   .navbar-collapse {
-    display: flex;
-    justify-content: center; /* Centers the navigation items horizontally */
+    /* Centers the navigation items horizontally */
     .nav-item {
       transition: all 0.3s;
       margin-left: 5px;
@@ -47,11 +46,9 @@ body {
   }
 }
 #welcome {
-  background: url("images/1.png");
-  height: 100vh;
-  background-size: cover; /* <------ */
-  background-repeat: no-repeat;
-  background-position: center center;
+  img {
+    width: 100%;
+  }
 }
 
 #about {
@@ -404,6 +401,20 @@ body {
 
     &:before {
       transform: translate(-50%, -50%) scale(3);
+    }
+  }
+}
+.navbar-toggler-icon {
+  i {
+    color: #b3b3b3;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    .navbar-collapse {
+      display: flex;
+      justify-content: center;
     }
   }
 }
